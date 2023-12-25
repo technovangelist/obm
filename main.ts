@@ -45,7 +45,7 @@ type TestRunOutput = {
   firstgen: GenerateOutput,
   secondgen: GenerateOutput,
   thirdgen: GenerateOutput,
-  fourthgen: GenerateOutput, 
+  fourthgen: GenerateOutput,
   averagetps: number
 }
 
@@ -53,8 +53,8 @@ type OBMOutput = {
   testdate: number,
   ollamaversion: string,
   sysinfo: SysInfo,
-  performance: TestRunOutput[], 
-  OBMVersion: string, 
+  performance: TestRunOutput[],
+  OBMVersion: string,
   OBMScore: string
 }
 
@@ -169,8 +169,8 @@ if (import.meta.main) {
     "testdate": Date.now(),
     "ollamaversion": ollamaVersion,
     "sysinfo": sysInfo,
-    "performance": [], 
-    "OBMVersion": obmversion, 
+    "performance": [],
+    "OBMVersion": obmversion,
     "OBMScore": "0"
   }
 
@@ -184,8 +184,5 @@ if (import.meta.main) {
     console.log(`Loading llama2:70b`);
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:70b"));
   }
-  // const obmscore = obmScore(fullInfo.performance[0].averagetps, fullInfo.performance[1]?.averagetps || 0, fullInfo.performance[2]?.averagetps || 0);
-
-  // console.log(`Your score is ${obmscore}`);
 
 }
