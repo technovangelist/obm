@@ -146,7 +146,6 @@ async function testrun(prompt: string, hostString: string, model: string): Promi
   return { model, firstgen, secondgen, thirdgen, fourthgen, averagetps }
 }
 
-// Learn more at https://deno.land/manual/examples/module_metadata#concepts
 if (import.meta.main) {
   const ollamaVersion = await ollamaversion();
   const standardPrompt = "Why is the sky blue?";
