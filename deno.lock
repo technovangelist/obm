@@ -1,0 +1,15 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:systeminformation": "npm:systeminformation@5.21.14"
+    },
+    "npm": {
+      "systeminformation@5.21.14": {
+        "integrity": "sha512-f8BuxS78GvHFExMScOV6KufV+e/0aQEngmzqAujG6nrFngJoYC954+eU+98iDmxp0BrcxvLrfiVABOCAgib7XA==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {}
+}
