@@ -1,8 +1,0 @@
-POST http://localhost:11434/api/generate
-
-{
-  "model": "llama2", 
-  "prompt": ""
-}
-
-###

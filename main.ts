@@ -185,4 +185,6 @@ if (import.meta.main) {
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:70b"));
   }
 
+  console.log(fullInfo);
+
 }

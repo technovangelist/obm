@@ -22,7 +22,7 @@ jobs:
   compile:
     strategy:
       matrix: 
-        target: [{target: x86_64-unknown-linux-gnu, file: linux-ollamamodelupdate}, {target: x86_64-pc-windows-msvc, file: win-ollamamodelupdate.exe}, {target: x86_64-apple-darwin, file: macos-x86-ollamamodelupdate}, {target: aarch64-apple-darwin, file: macos-arm64-ollamamodelupdate}]
+        target: [{target: x86_64-unknown-linux-gnu, file: linux-obm}, {target: x86_64-pc-windows-msvc, file: win-obm.exe}, {target: x86_64-apple-darwin, file: macos-x86-obm}, {target: aarch64-apple-darwin, file: macos-arm64-obm}]
     runs-on: ubuntu-latest
     needs: changelog
     if: ${{ needs.changelog.outputs.skipped == 'false' }}
