@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/technovangelist/obm/compare/v0.0.3...v0.0.4) (2023-12-30)
+
+
+### Bug Fixes
+
+* right filenames ([12970dc](https://github.com/technovangelist/obm/commit/12970dcaf966c70b6c5347cce38e1f0b0d4bdd81))
+
+
+
 ## [0.0.3](https://github.com/technovangelist/obm/compare/v0.0.2...v0.0.3) (2023-12-25)
 
 
