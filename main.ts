@@ -50,7 +50,7 @@ type TestRunOutput = {
 }
 
 type OBMOutput = {
-  testdate: number,
+  testdate: string,
   ollamaversion: string,
   sysinfo: SysInfo,
   performance: TestRunOutput[],
@@ -166,7 +166,7 @@ if (import.meta.main) {
   await generate("", "orca-mini", hostString);
 
   const fullInfo: OBMOutput = {
-    "testdate": Date.now(),
+    "testdate": new Date().toISOString(),
     "ollamaversion": ollamaVersion,
     "sysinfo": sysInfo,
     "performance": [],
@@ -185,6 +185,16 @@ if (import.meta.main) {
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:70b"));
   }
 
-  console.log(fullInfo);
+  const proceed = confirm("Do you approve to send the output from this command to obm.tvl.st to share with everyone? No personal info is included");
+  if (proceed) {
+    const submitresponse = await fetch("https://obm.tvl.st/api/postbm", {
+      "method": "post",
+      "body": JSON.stringify(fullInfo)
+    });
+
+    const json = await submitresponse.json()
+
+    console.log(`Your OBMScore is ${json.OBMScore}`);
+  }
 
 }
