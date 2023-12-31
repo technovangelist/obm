@@ -1,3 +1,12 @@
+## [0.0.19](https://github.com/technovangelist/obm/compare/v0.0.18...v0.0.19) (2023-12-31)
+
+
+### Bug Fixes
+
+* test ([4bafec8](https://github.com/technovangelist/obm/commit/4bafec8bca326929c437bb7eef430facd02482b6))
+
+
+
 ## [0.0.18](https://github.com/technovangelist/obm/compare/v0.0.17...v0.0.18) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update mem ([4be28fd](https://github.com/technovangelist/obm/commit/4be28fdeeb276041c4893e1f66109c484dbe55ab))
-
-
-
-## [0.0.14](https://github.com/technovangelist/obm/compare/v0.0.13...v0.0.14) (2023-12-31)
-
-
-### Bug Fixes
-
-* don't log mem and gpu ([3538439](https://github.com/technovangelist/obm/commit/3538439f2053fd1dd5662343e21948d5e6eec5e7))
 
 
 
