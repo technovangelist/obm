@@ -1,3 +1,12 @@
+## [0.0.14](https://github.com/technovangelist/obm/compare/v0.0.13...v0.0.14) (2023-12-31)
+
+
+### Bug Fixes
+
+* don't log mem and gpu ([3538439](https://github.com/technovangelist/obm/commit/3538439f2053fd1dd5662343e21948d5e6eec5e7))
+
+
+
 ## [0.0.13](https://github.com/technovangelist/obm/compare/v0.0.12...v0.0.13) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update score ([931a063](https://github.com/technovangelist/obm/commit/931a063371392bdf28830259fa3111b52fabf3fc))
-
-
-
-## [0.0.9](https://github.com/technovangelist/obm/compare/v0.0.8...v0.0.9) (2023-12-31)
-
-
-### Bug Fixes
-
-* testing mem gpu output ([203d983](https://github.com/technovangelist/obm/commit/203d9831de47dc10b21a42e91c9bdfb2a6a1ba15))
 
 
 
