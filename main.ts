@@ -228,7 +228,6 @@ if (import.meta.main) {
     });
 
     const json = await submitresponse.json()
-
     console.log(`Your OBMScore is ${json.OBMScore.obmscore} and is made of 3 components: \nllama2:7b OBMScore: ${json.OBMScore.obm7}\nllama2:13b OBMScore: ${json.OBMScore.obm13}\nllama2:70b OBMScore: ${json.OBMScore.obm70}`);
   }
 
