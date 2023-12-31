@@ -1,3 +1,12 @@
+## [0.0.18](https://github.com/technovangelist/obm/compare/v0.0.17...v0.0.18) (2023-12-31)
+
+
+### Bug Fixes
+
+* update gpu for a100 ([4790e55](https://github.com/technovangelist/obm/commit/4790e55d7292629971799b3809838d78b7ade664))
+
+
+
 ## [0.0.17](https://github.com/technovangelist/obm/compare/v0.0.16...v0.0.17) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * don't log mem and gpu ([3538439](https://github.com/technovangelist/obm/commit/3538439f2053fd1dd5662343e21948d5e6eec5e7))
-
-
-
-## [0.0.13](https://github.com/technovangelist/obm/compare/v0.0.12...v0.0.13) (2023-12-31)
-
-
-### Bug Fixes
-
-* update core string ([0b5e146](https://github.com/technovangelist/obm/commit/0b5e146b9e4cb99108b7a224979ad896c7fe1878))
 
 
 
