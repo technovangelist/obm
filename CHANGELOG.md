@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/technovangelist/obm/compare/v0.0.5...v0.0.6) (2023-12-31)
+
+
+### Bug Fixes
+
+* update and clean ([6a1fcb8](https://github.com/technovangelist/obm/commit/6a1fcb8bdbac3f49e26ecf8bf6cff3e4218cd42f))
+
+
+
 ## [0.0.5](https://github.com/technovangelist/obm/compare/v0.0.4...v0.0.5) (2023-12-30)
 
 
