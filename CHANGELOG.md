@@ -1,3 +1,12 @@
+## [0.0.12](https://github.com/technovangelist/obm/compare/v0.0.11...v0.0.12) (2023-12-31)
+
+
+### Bug Fixes
+
+* update mem multiplier ([cf6be4b](https://github.com/technovangelist/obm/commit/cf6be4b67239636cfbd61adac8436a9634e44e11))
+
+
+
 ## [0.0.11](https://github.com/technovangelist/obm/compare/v0.0.10...v0.0.11) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * don't dl if not enough mem ([3199a69](https://github.com/technovangelist/obm/commit/3199a69011f294a2e41000963615a4a033456469))
-
-
-
-## [0.0.7](https://github.com/technovangelist/obm/compare/v0.0.6...v0.0.7) (2023-12-31)
-
-
-### Bug Fixes
-
-* now its really pulling ([a3745e2](https://github.com/technovangelist/obm/commit/a3745e2df8c7283a6aa145108acc956da258f7c4))
 
 
 
