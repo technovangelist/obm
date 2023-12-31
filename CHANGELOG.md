@@ -1,3 +1,12 @@
+## [0.0.16](https://github.com/technovangelist/obm/compare/v0.0.15...v0.0.16) (2023-12-31)
+
+
+### Bug Fixes
+
+* rounding mem ([3453377](https://github.com/technovangelist/obm/commit/3453377bcd4e2f7dfcce68d49ed2043469bc4690))
+
+
+
 ## [0.0.15](https://github.com/technovangelist/obm/compare/v0.0.14...v0.0.15) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update mem multiplier ([cf6be4b](https://github.com/technovangelist/obm/commit/cf6be4b67239636cfbd61adac8436a9634e44e11))
-
-
-
-## [0.0.11](https://github.com/technovangelist/obm/compare/v0.0.10...v0.0.11) (2023-12-31)
-
-
-### Bug Fixes
-
-* update ([751feaf](https://github.com/technovangelist/obm/commit/751feaf6fb0377050d7f11c6d25daf7f4a2510ee))
 
 
 
