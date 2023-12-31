@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/technovangelist/obm/compare/v0.0.4...v0.0.5) (2023-12-30)
+
+
+### Bug Fixes
+
+* now sending to obm site works ([5760b1b](https://github.com/technovangelist/obm/commit/5760b1bc2f997076d505e6e655d0dff387acfebd))
+
+
+
 ## [0.0.4](https://github.com/technovangelist/obm/compare/v0.0.3...v0.0.4) (2023-12-30)
 
 
