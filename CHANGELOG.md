@@ -1,3 +1,12 @@
+## [0.0.21](https://github.com/technovangelist/obm/compare/v0.0.20...v0.0.21) (2023-12-31)
+
+
+### Bug Fixes
+
+* models downloaded text ([18dbcf5](https://github.com/technovangelist/obm/commit/18dbcf574667a254f6b9eae444ad49dfac0fc674))
+
+
+
 ## [0.0.20](https://github.com/technovangelist/obm/compare/v0.0.19...v0.0.20) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * forgot a parseint ([33a20e7](https://github.com/technovangelist/obm/commit/33a20e7ec008ef14127d1294ab754826d94ad846))
-
-
-
-## [0.0.16](https://github.com/technovangelist/obm/compare/v0.0.15...v0.0.16) (2023-12-31)
-
-
-### Bug Fixes
-
-* rounding mem ([3453377](https://github.com/technovangelist/obm/commit/3453377bcd4e2f7dfcce68d49ed2043469bc4690))
 
 
 
