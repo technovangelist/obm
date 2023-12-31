@@ -1,3 +1,12 @@
+## [0.0.11](https://github.com/technovangelist/obm/compare/v0.0.10...v0.0.11) (2023-12-31)
+
+
+### Bug Fixes
+
+* update ([751feaf](https://github.com/technovangelist/obm/commit/751feaf6fb0377050d7f11c6d25daf7f4a2510ee))
+
+
+
 ## [0.0.10](https://github.com/technovangelist/obm/compare/v0.0.9...v0.0.10) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * now its really pulling ([a3745e2](https://github.com/technovangelist/obm/commit/a3745e2df8c7283a6aa145108acc956da258f7c4))
-
-
-
-## [0.0.6](https://github.com/technovangelist/obm/compare/v0.0.5...v0.0.6) (2023-12-31)
-
-
-### Bug Fixes
-
-* update and clean ([6a1fcb8](https://github.com/technovangelist/obm/commit/6a1fcb8bdbac3f49e26ecf8bf6cff3e4218cd42f))
 
 
 
