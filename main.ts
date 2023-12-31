@@ -76,6 +76,29 @@ async function ollamaversion() {
   return versionNumber;
 }
 
+async function prepModel(model: string, host: string) {
+  const body = {
+    "model": model,
+    "stream": false
+  };
+  const localmodels = await fetch(`${host}/api/tags`, {
+    method: "get"
+  });
+  const jsonlocalmodels: { models: { name: string }[] } = await localmodels.json()
+  const modellist = jsonlocalmodels.models.map(m => {
+    return m.name;
+  })
+  if (!modellist.includes(model)) {
+    console.log(`${model} is not on this system. Downloading first.`)
+
+    await fetch(`${host}/api/pull`, {
+      method: "post",
+      body: JSON.stringify(body)
+    })
+    console.log(`Pulled ${model}`);
+  }
+}
+
 export async function generate(prompt: string, model: string, host: string): Promise<GenerateOutput> {
   const body = {
     "model": model,
@@ -133,6 +156,7 @@ function averageTokensPerSecond(first: GenerateOutput, second: GenerateOutput, t
 
 
 async function testrun(prompt: string, hostString: string, model: string): Promise<TestRunOutput> {
+  prepModel(model, hostString);
   const firstgen = await generate(prompt, model, hostString);
   console.log(`First run of ${model} took ${firstgen.load_duration.toFixed(2)} seconds to load then ${firstgen.eval_duration.toFixed(2)} seconds to evaluate with ${(firstgen.eval_count / firstgen.eval_duration).toFixed(2)} tokens per second`)
   const secondgen = await generate(prompt, model, hostString);
