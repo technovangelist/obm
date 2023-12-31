@@ -126,6 +126,27 @@ export async function generate(prompt: string, model: string, host: string): Pro
   jsonResponse.prompt_eval_duration = jsonResponse.prompt_eval_duration / 1e9;
   return jsonResponse;
 }
+function memMultiplier(type: "ram" | "vram", platform: string): number {
+  const mults = [
+    {
+      platform: "linux",
+      ram: 1024 * 1024 * 1024,
+      vram: 1024
+    }, {
+      platform: "windows",
+      ram: 1024 * 1024 * 1024,
+      vram: 1024
+    }, {
+      platform: "darwin",
+      ram: 1024 * 1024,
+      vram: 1
+    },
+  ]
+
+  const mult = mults.filter(m => m.platform === platform).map(m => m[type])[0];
+
+  return mult;
+}
 
 export async function sysinfo(): Promise<SysInfo> {
   const cpu = await si.cpu();
@@ -134,9 +155,10 @@ export async function sysinfo(): Promise<SysInfo> {
   const gpu = await si.graphics();
   console.log(gpu);
   const os = await si.osInfo();
+
   const cpuinfo = { manufacturer: cpu.manufacturer, brand: cpu.brand, cores: cpu.cores };
-  const meminfo = { totalgb: mem.total / 1024 / 1024 }
-  const gpustats = gpu.controllers.map(g => { return { gpu: `${g.vendor} ${g.model}`, vram: g.vram || 0, cores: (g.cores) || 0 } })
+  const meminfo = { totalgb: mem.total / memMultiplier("ram", os.platform) }
+  const gpustats = gpu.controllers.map(g => { return { gpu: `${g.vendor} ${g.model}`, vram: g.vram || mem.total, cores: (g.cores) || 0 } })
   const osinfo = { platform: os.platform, distro: os.distro, release: os.release, codename: os.codename }
   const sysinfo = {
     os: osinfo,
@@ -197,7 +219,7 @@ if (import.meta.main) {
   await prepModel("llama2:7b", hostString);
   console.log("Loading orca-mini to reset")
   await generate("", "orca-mini", hostString);
-  
+
   const fullInfo: OBMOutput = {
     "testdate": new Date().toISOString(),
     "ollamaversion": ollamaVersion,
@@ -206,7 +228,7 @@ if (import.meta.main) {
     "OBMVersion": obmversion,
     "OBMScore": "0"
   }
-  
+
   console.log("Loading llama2:7b");
   fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:7b"))
   if (mem > 13) {
@@ -219,7 +241,7 @@ if (import.meta.main) {
     console.log(`Loading llama2:70b`);
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:70b"));
   }
-  
+
   const proceed = confirm("Do you approve to send the output from this command to obm.tvl.st to share with everyone? No personal info is included");
   if (proceed) {
     const submitresponse = await fetch("https://obm.tvl.st/api/postbm", {
