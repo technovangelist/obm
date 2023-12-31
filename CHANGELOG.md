@@ -1,3 +1,12 @@
+## [0.0.15](https://github.com/technovangelist/obm/compare/v0.0.14...v0.0.15) (2023-12-31)
+
+
+### Bug Fixes
+
+* update mem ([4be28fd](https://github.com/technovangelist/obm/commit/4be28fdeeb276041c4893e1f66109c484dbe55ab))
+
+
+
 ## [0.0.14](https://github.com/technovangelist/obm/compare/v0.0.13...v0.0.14) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update ([751feaf](https://github.com/technovangelist/obm/commit/751feaf6fb0377050d7f11c6d25daf7f4a2510ee))
-
-
-
-## [0.0.10](https://github.com/technovangelist/obm/compare/v0.0.9...v0.0.10) (2023-12-31)
-
-
-### Bug Fixes
-
-* update score ([931a063](https://github.com/technovangelist/obm/commit/931a063371392bdf28830259fa3111b52fabf3fc))
 
 
 
