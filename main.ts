@@ -193,11 +193,9 @@ if (import.meta.main) {
   console.log("Ensuring models are loaded")
   await prepModel("orca-mini:latest", hostString);
   await prepModel("llama2:7b", hostString);
-  await prepModel("llama2:13b", hostString);
-  await prepModel("llama2:70b", hostString);
   console.log("Loading orca-mini to reset")
   await generate("", "orca-mini", hostString);
-
+  
   const fullInfo: OBMOutput = {
     "testdate": new Date().toISOString(),
     "ollamaversion": ollamaVersion,
@@ -206,18 +204,20 @@ if (import.meta.main) {
     "OBMVersion": obmversion,
     "OBMScore": "0"
   }
-
+  
   console.log("Loading llama2:7b");
   fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:7b"))
   if (mem > 13) {
+    await prepModel("llama2:13b", hostString);
     console.log(`Loading llama2:13b`);
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:13b"));
   };
   if (mem > 63) {
+    await prepModel("llama2:70b", hostString);
     console.log(`Loading llama2:70b`);
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:70b"));
   }
-
+  
   const proceed = confirm("Do you approve to send the output from this command to obm.tvl.st to share with everyone? No personal info is included");
   if (proceed) {
     const submitresponse = await fetch("https://obm.tvl.st/api/postbm", {
