@@ -130,11 +130,11 @@ function memMultiplier(type: "ram" | "vram", platform: string): number {
   const mults = [
     {
       platform: "linux",
-      ram: 1024 * 1024 * 1024,
+      ram: 1000 * 1024 * 1024,
       vram: 1024
     }, {
       platform: "windows",
-      ram: 1024 * 1024 * 1024,
+      ram: 1000 * 1024 * 1024,
       vram: 1024
     }, {
       platform: "darwin",
@@ -158,7 +158,7 @@ export async function sysinfo(): Promise<SysInfo> {
 
   const cpuinfo = { manufacturer: cpu.manufacturer, brand: cpu.brand, cores: cpu.cores };
   const meminfo = { totalgb: mem.total / memMultiplier("ram", os.platform) }
-  const gpustats = gpu.controllers.map(g => { return { gpu: `${g.vendor} ${g.model}`, vram: g.vram || mem.total, cores: (g.cores) || 0 } })
+  const gpustats = gpu.controllers.map(g => { return { gpu: `${g.vendor} ${g.model}`, vram: (g.vram as number / memMultiplier("vram", os.platform)) || (meminfo.totalgb), cores: (g.cores) || 0 } })
   const osinfo = { platform: os.platform, distro: os.distro, release: os.release, codename: os.codename }
   const sysinfo = {
     os: osinfo,
