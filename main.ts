@@ -130,7 +130,9 @@ export async function generate(prompt: string, model: string, host: string): Pro
 export async function sysinfo(): Promise<SysInfo> {
   const cpu = await si.cpu();
   const mem = await si.mem();
+  console.log(mem);
   const gpu = await si.graphics();
+  console.log(gpu);
   const os = await si.osInfo();
   const cpuinfo = { manufacturer: cpu.manufacturer, brand: cpu.brand, cores: cpu.cores };
   const meminfo = { totalgb: mem.total / 1024 / 1024 }
