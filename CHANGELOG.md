@@ -1,3 +1,12 @@
+## [0.0.17](https://github.com/technovangelist/obm/compare/v0.0.16...v0.0.17) (2023-12-31)
+
+
+### Bug Fixes
+
+* forgot a parseint ([33a20e7](https://github.com/technovangelist/obm/commit/33a20e7ec008ef14127d1294ab754826d94ad846))
+
+
+
 ## [0.0.16](https://github.com/technovangelist/obm/compare/v0.0.15...v0.0.16) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update core string ([0b5e146](https://github.com/technovangelist/obm/commit/0b5e146b9e4cb99108b7a224979ad896c7fe1878))
-
-
-
-## [0.0.12](https://github.com/technovangelist/obm/compare/v0.0.11...v0.0.12) (2023-12-31)
-
-
-### Bug Fixes
-
-* update mem multiplier ([cf6be4b](https://github.com/technovangelist/obm/commit/cf6be4b67239636cfbd61adac8436a9634e44e11))
 
 
 
