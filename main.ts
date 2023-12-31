@@ -78,7 +78,7 @@ async function ollamaversion() {
 
 async function prepModel(model: string, host: string) {
   const body = {
-    "model": model,
+    "name": model,
     "stream": false
   };
   const localmodels = await fetch(`${host}/api/tags`, {
@@ -87,14 +87,15 @@ async function prepModel(model: string, host: string) {
   const jsonlocalmodels: { models: { name: string }[] } = await localmodels.json()
   const modellist = jsonlocalmodels.models.map(m => {
     return m.name;
-  })
+  });
   if (!modellist.includes(model)) {
     console.log(`${model} is not on this system. Downloading first.`)
 
-    await fetch(`${host}/api/pull`, {
+    const response = await fetch(`${host}/api/pull`, {
       method: "post",
       body: JSON.stringify(body)
     })
+    console.log((await response.json()).status)
     console.log(`Pulled ${model}`);
   }
 }
@@ -156,7 +157,7 @@ function averageTokensPerSecond(first: GenerateOutput, second: GenerateOutput, t
 
 
 async function testrun(prompt: string, hostString: string, model: string): Promise<TestRunOutput> {
-  prepModel(model, hostString);
+  await prepModel(model, hostString);
   const firstgen = await generate(prompt, model, hostString);
   console.log(`First run of ${model} took ${firstgen.load_duration.toFixed(2)} seconds to load then ${firstgen.eval_duration.toFixed(2)} seconds to evaluate with ${(firstgen.eval_count / firstgen.eval_duration).toFixed(2)} tokens per second`)
   const secondgen = await generate(prompt, model, hostString);
@@ -187,6 +188,7 @@ if (import.meta.main) {
   console.log(`Using Ollama version: ${ollamaVersion}`)
   const mem = sysInfo.mem.totalgb;
   console.log("Loading orca-mini to reset")
+  prepModel("orca-mini", hostString);
   await generate("", "orca-mini", hostString);
 
   const fullInfo: OBMOutput = {
