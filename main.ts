@@ -208,7 +208,8 @@ if (import.meta.main) {
   if (sysInfo.gpu.length > 0) {
     console.log("GPU Info:");
     sysInfo.gpu.forEach(g => {
-      console.log(`${g.gpu} with ${g.vram}GB vram and ${g.cores} cores`)
+      const corestring = g.cores > 0 ? ` and ${g.cores} cores` : "";
+      console.log(`${g.gpu} with ${g.vram}GB vram${corestring}`)
     })
     console.log("");
   }
