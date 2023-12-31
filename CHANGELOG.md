@@ -1,3 +1,12 @@
+## [0.0.10](https://github.com/technovangelist/obm/compare/v0.0.9...v0.0.10) (2023-12-31)
+
+
+### Bug Fixes
+
+* update score ([931a063](https://github.com/technovangelist/obm/commit/931a063371392bdf28830259fa3111b52fabf3fc))
+
+
+
 ## [0.0.9](https://github.com/technovangelist/obm/compare/v0.0.8...v0.0.9) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update and clean ([6a1fcb8](https://github.com/technovangelist/obm/commit/6a1fcb8bdbac3f49e26ecf8bf6cff3e4218cd42f))
-
-
-
-## [0.0.5](https://github.com/technovangelist/obm/compare/v0.0.4...v0.0.5) (2023-12-30)
-
-
-### Bug Fixes
-
-* now sending to obm site works ([5760b1b](https://github.com/technovangelist/obm/commit/5760b1bc2f997076d505e6e655d0dff387acfebd))
 
 
 
