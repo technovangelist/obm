@@ -221,7 +221,7 @@ if (import.meta.main) {
   }
   console.log(`Using Ollama version: ${ollamaVersion}`)
   const mem = sysInfo.mem.totalgb;
-  console.log("Ensuring models are loaded")
+  console.log("Ensuring models are downloaded.")
   await prepModel("orca-mini:latest", hostString);
   await prepModel("llama2:7b", hostString);
   console.log("Loading orca-mini to reset")
