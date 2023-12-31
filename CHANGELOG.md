@@ -1,3 +1,12 @@
+## [0.0.8](https://github.com/technovangelist/obm/compare/v0.0.7...v0.0.8) (2023-12-31)
+
+
+### Bug Fixes
+
+* don't dl if not enough mem ([3199a69](https://github.com/technovangelist/obm/commit/3199a69011f294a2e41000963615a4a033456469))
+
+
+
 ## [0.0.7](https://github.com/technovangelist/obm/compare/v0.0.6...v0.0.7) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * right filenames ([12970dc](https://github.com/technovangelist/obm/commit/12970dcaf966c70b6c5347cce38e1f0b0d4bdd81))
-
-
-
-## [0.0.3](https://github.com/technovangelist/obm/compare/v0.0.2...v0.0.3) (2023-12-25)
-
-
-### Bug Fixes
-
-* updtae ([a0b3433](https://github.com/technovangelist/obm/commit/a0b3433c9bd23755b0de93421c6251394f7c3dd7))
 
 
 
