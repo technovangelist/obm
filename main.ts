@@ -160,9 +160,8 @@ export async function sysinfo(): Promise<SysInfo> {
   const meminfo = { totalgb: parseInt((mem.total / memMultiplier("ram", os.platform)).toFixed(0)) }
   const gpustats = gpu.controllers.map(g => {
     let gpuvendor = `${g.vendor} ${g.model}`;
-    console.log(gpuvendor);
     if (gpuvendor === "NVIDIA Corporation Device 20b0") {
-      gpuvendor = "NVIDIA Corporation Device A100"
+      gpuvendor = "NVIDIA Corporation Device A100";
     }
     return { gpu: gpuvendor, vram: (g.vram as number / memMultiplier("vram", os.platform)) || (meminfo.totalgb), cores: (g.cores) || 0 }
   })
