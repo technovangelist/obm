@@ -1,3 +1,12 @@
+## [0.0.13](https://github.com/technovangelist/obm/compare/v0.0.12...v0.0.13) (2023-12-31)
+
+
+### Bug Fixes
+
+* update core string ([0b5e146](https://github.com/technovangelist/obm/commit/0b5e146b9e4cb99108b7a224979ad896c7fe1878))
+
+
+
 ## [0.0.12](https://github.com/technovangelist/obm/compare/v0.0.11...v0.0.12) (2023-12-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * testing mem gpu output ([203d983](https://github.com/technovangelist/obm/commit/203d9831de47dc10b21a42e91c9bdfb2a6a1ba15))
-
-
-
-## [0.0.8](https://github.com/technovangelist/obm/compare/v0.0.7...v0.0.8) (2023-12-31)
-
-
-### Bug Fixes
-
-* don't dl if not enough mem ([3199a69](https://github.com/technovangelist/obm/commit/3199a69011f294a2e41000963615a4a033456469))
 
 
 
