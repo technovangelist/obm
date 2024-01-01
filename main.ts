@@ -150,6 +150,7 @@ function memMultiplier(type: "ram" | "vram", platform: string): number {
 
 export async function sysinfo(): Promise<SysInfo> {
   const cpu = await si.cpu();
+  console.log(cpu);
   const mem = await si.mem();
   // console.log(mem);
   const gpu = await si.graphics();
