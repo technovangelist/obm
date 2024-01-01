@@ -150,14 +150,14 @@ function memMultiplier(type: "ram" | "vram", platform: string): number {
 
 export async function sysinfo(): Promise<SysInfo> {
   const cpu = await si.cpu();
-  console.log(cpu);
+  // console.log(cpu);
   const mem = await si.mem();
   // console.log(mem);
   const gpu = await si.graphics();
   // console.log(gpu);
   const os = await si.osInfo();
 
-  const cpuinfo = { manufacturer: cpu.manufacturer, brand: cpu.brand, cores: cpu.cores };
+  const cpuinfo = { manufacturer: cpu.manufacturer, brand: cpu.brand, cores: cpu.cores, speed: cpu.speed };
   const meminfo = { totalgb: parseInt((mem.total / memMultiplier("ram", os.platform)).toFixed(0)) }
   const gpustats = gpu.controllers.map(g => {
     let gpuvendor = `${g.vendor} ${g.model}`;
@@ -250,7 +250,7 @@ if (import.meta.main) {
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:70b"));
   }
 
-  console.log(fullInfo);
+  // console.log(fullInfo);
   const proceed = confirm("Do you approve to send the output from this command to obm.tvl.st to share with everyone? No personal info is included");
   if (proceed) {
     const submitresponse = await fetch("https://obm.tvl.st/api/postbm", {
