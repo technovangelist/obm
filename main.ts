@@ -249,6 +249,7 @@ if (import.meta.main) {
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:70b"));
   }
 
+  console.log(fullInfo);
   const proceed = confirm("Do you approve to send the output from this command to obm.tvl.st to share with everyone? No personal info is included");
   if (proceed) {
     const submitresponse = await fetch("https://obm.tvl.st/api/postbm", {
