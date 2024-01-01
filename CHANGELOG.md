@@ -1,3 +1,12 @@
+## [0.0.23](https://github.com/technovangelist/obm/compare/v0.0.22...v0.0.23) (2024-01-01)
+
+
+### Bug Fixes
+
+* more tests ([8262f82](https://github.com/technovangelist/obm/commit/8262f828c1ece81862f1fbf2ad1034f33f134f73))
+
+
+
 ## [0.0.22](https://github.com/technovangelist/obm/compare/v0.0.21...v0.0.22) (2024-01-01)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * test ([4bafec8](https://github.com/technovangelist/obm/commit/4bafec8bca326929c437bb7eef430facd02482b6))
-
-
-
-## [0.0.18](https://github.com/technovangelist/obm/compare/v0.0.17...v0.0.18) (2023-12-31)
-
-
-### Bug Fixes
-
-* update gpu for a100 ([4790e55](https://github.com/technovangelist/obm/commit/4790e55d7292629971799b3809838d78b7ade664))
 
 
 
