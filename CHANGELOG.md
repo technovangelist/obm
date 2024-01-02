@@ -1,3 +1,12 @@
+## [0.0.27](https://github.com/technovangelist/obm/compare/v0.0.26...v0.0.27) (2024-01-02)
+
+
+### Bug Fixes
+
+* add a10g ([9be047e](https://github.com/technovangelist/obm/commit/9be047e19eb1de0441e01924ecac03d76b9a9c6d))
+
+
+
 ## [0.0.26](https://github.com/technovangelist/obm/compare/v0.0.25...v0.0.26) (2024-01-02)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * more tests ([8262f82](https://github.com/technovangelist/obm/commit/8262f828c1ece81862f1fbf2ad1034f33f134f73))
-
-
-
-## [0.0.22](https://github.com/technovangelist/obm/compare/v0.0.21...v0.0.22) (2024-01-01)
-
-
-### Bug Fixes
-
-* testing ([354549b](https://github.com/technovangelist/obm/commit/354549b32fcf469116774bc044426f6dd34f2e16))
 
 
 
