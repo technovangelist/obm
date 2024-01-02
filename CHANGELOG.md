@@ -1,3 +1,12 @@
+## [0.0.28](https://github.com/technovangelist/obm/compare/v0.0.27...v0.0.28) (2024-01-02)
+
+
+### Bug Fixes
+
+* mem vram ([e5a93cc](https://github.com/technovangelist/obm/commit/e5a93cc89248841abdc94c7b3b21a15bb8d98235))
+
+
+
 ## [0.0.27](https://github.com/technovangelist/obm/compare/v0.0.26...v0.0.27) (2024-01-02)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * reset ([9ef8372](https://github.com/technovangelist/obm/commit/9ef83723fddef2c01f034dc1eb97243d110b2ad4))
-
-
-
-## [0.0.23](https://github.com/technovangelist/obm/compare/v0.0.22...v0.0.23) (2024-01-01)
-
-
-### Bug Fixes
-
-* more tests ([8262f82](https://github.com/technovangelist/obm/commit/8262f828c1ece81862f1fbf2ad1034f33f134f73))
 
 
 
