@@ -1,3 +1,12 @@
+## [0.0.25](https://github.com/technovangelist/obm/compare/v0.0.24...v0.0.25) (2024-01-02)
+
+
+### Bug Fixes
+
+* upppdate ([4767ad2](https://github.com/technovangelist/obm/commit/4767ad280692fc41e5e73a9196f6b648b67948ff))
+
+
+
 ## [0.0.24](https://github.com/technovangelist/obm/compare/v0.0.23...v0.0.24) (2024-01-01)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * models downloaded text ([18dbcf5](https://github.com/technovangelist/obm/commit/18dbcf574667a254f6b9eae444ad49dfac0fc674))
-
-
-
-## [0.0.20](https://github.com/technovangelist/obm/compare/v0.0.19...v0.0.20) (2023-12-31)
-
-
-### Bug Fixes
-
-* remove test ([5a3586b](https://github.com/technovangelist/obm/commit/5a3586b8e1af68960bc8a2491a09c6c30e04b325))
 
 
 
