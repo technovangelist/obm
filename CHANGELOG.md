@@ -1,3 +1,12 @@
+## [0.0.29](https://github.com/technovangelist/obm/compare/v0.0.28...v0.0.29) (2024-01-02)
+
+
+### Bug Fixes
+
+* lower mem requirements ([2c0b12f](https://github.com/technovangelist/obm/commit/2c0b12fd5c9b48d6421f42cac50e34ee7a9df9cf))
+
+
+
 ## [0.0.28](https://github.com/technovangelist/obm/compare/v0.0.27...v0.0.28) (2024-01-02)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * upppdate ([4767ad2](https://github.com/technovangelist/obm/commit/4767ad280692fc41e5e73a9196f6b648b67948ff))
-
-
-
-## [0.0.24](https://github.com/technovangelist/obm/compare/v0.0.23...v0.0.24) (2024-01-01)
-
-
-### Bug Fixes
-
-* reset ([9ef8372](https://github.com/technovangelist/obm/commit/9ef83723fddef2c01f034dc1eb97243d110b2ad4))
 
 
 
