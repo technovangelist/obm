@@ -161,6 +161,9 @@ export async function sysinfo(): Promise<SysInfo> {
   const meminfo = { totalgb: parseInt((mem.total / memMultiplier("ram", os.platform)).toFixed(0)) }
   const gpustats = gpu.controllers.map(g => {
     let gpuvendor = `${g.vendor} ${g.model}`;
+    if (gpuvendor === "NVIDIA Corporation Device 20b2") {
+      gpuvendor = "NVIDIA Corporation Device A100";
+    }
     if (gpuvendor === "NVIDIA Corporation Device 20b0") {
       gpuvendor = "NVIDIA Corporation Device A100";
     }
