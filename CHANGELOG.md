@@ -1,3 +1,12 @@
+## [0.0.26](https://github.com/technovangelist/obm/compare/v0.0.25...v0.0.26) (2024-01-02)
+
+
+### Bug Fixes
+
+* add the bigger a100 ([2105e8d](https://github.com/technovangelist/obm/commit/2105e8d6f7d835bc8d7ed02a63101480d67f3135))
+
+
+
 ## [0.0.25](https://github.com/technovangelist/obm/compare/v0.0.24...v0.0.25) (2024-01-02)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * testing ([354549b](https://github.com/technovangelist/obm/commit/354549b32fcf469116774bc044426f6dd34f2e16))
-
-
-
-## [0.0.21](https://github.com/technovangelist/obm/compare/v0.0.20...v0.0.21) (2023-12-31)
-
-
-### Bug Fixes
-
-* models downloaded text ([18dbcf5](https://github.com/technovangelist/obm/commit/18dbcf574667a254f6b9eae444ad49dfac0fc674))
 
 
 
