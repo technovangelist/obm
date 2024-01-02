@@ -248,12 +248,12 @@ if (import.meta.main) {
 
   console.log("Loading llama2:7b");
   fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:7b"))
-  if (mem > 13) {
+  if (mem > 10) {
     await prepModel("llama2:13b", hostString);
     console.log(`Loading llama2:13b`);
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:13b"));
   };
-  if (mem > 63) {
+  if (mem > 50) {
     await prepModel("llama2:70b", hostString);
     console.log(`Loading llama2:70b`);
     fullInfo.performance.push(await testrun(standardPrompt, hostString, "llama2:70b"));
