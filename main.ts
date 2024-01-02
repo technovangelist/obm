@@ -163,9 +163,15 @@ export async function sysinfo(): Promise<SysInfo> {
     let gpuvendor = `${g.vendor} ${g.model}`;
     if (gpuvendor === "NVIDIA Corporation Device 20b2") {
       gpuvendor = "NVIDIA Corporation Device A100";
+      g.vram = 80;
+    }
+    if (gpuvendor === "NVIDIA Corporation Device 2237") {
+      gpuvendor = "NVIDIA Corporation Device A10G";
+      g.vram = 24;
     }
     if (gpuvendor === "NVIDIA Corporation Device 20b0") {
       gpuvendor = "NVIDIA Corporation Device A100";
+      g.vram = 40;
     }
     return { gpu: gpuvendor, vram: (g.vram as number / memMultiplier("vram", os.platform)) || (meminfo.totalgb), cores: (g.cores) || 0 }
   })
